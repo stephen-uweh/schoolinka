@@ -17,7 +17,7 @@ config();
         ConfigModule.forRoot(),
         JwtModule.register({
         secret: process.env.JWT_SECRET,
-        signOptions: { expiresIn: '60000000000000000s' },
+        signOptions: { expiresIn: '600000000000000000s' },
         }),
         PassportModule,
         TypeOrmModule.forFeature([UserEntity, PostEntity, CommentEntity]),

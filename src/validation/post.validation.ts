@@ -1,5 +1,6 @@
 import * as Joi from "joi";
 
+
 export function validateCreatePost(post){
     const Schema = Joi.object().keys({
         title: Joi.string().label("Title").required(),

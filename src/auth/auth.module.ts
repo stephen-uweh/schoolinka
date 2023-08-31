@@ -24,7 +24,7 @@ config();
     TypeOrmModule.forFeature([UserEntity, PostEntity, CommentEntity]),
     JwtModule.register({
       secret: jwtConstants.secret,
-      signOptions: { expiresIn: '60000000000000000s' },
+      signOptions: { expiresIn: '600000000000000000s' },
     }),
   ],
   providers: [AuthService, 
